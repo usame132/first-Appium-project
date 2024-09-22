@@ -15,13 +15,14 @@ public class RunNativeAppOnAndroid {
     public void openApp() throws MalformedURLException {
 
         DesiredCapabilities caps= new DesiredCapabilities();
-         // caps.setCapability("deviceName","usame");
-         // caps.setCapability("app","C:\\Users\\Usame Muhammed\\IdeaProjects\\AppiumV\\ApiDemos-debug.apk");
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME,"usame");
-        caps.setCapability(MobileCapabilityType.APP,"C:\\\\Users\\\\Usame Muhammed\\\\IdeaProjects\\\\AppiumV\\\\ApiDemos-debug.apk");
-        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
+        //  caps.setCapability("deviceName","usame"); // Mobile Capability Type kullanmak daha sağlıklı olur, string hatalardan kaçınmak için.
+        // caps.setCapability("app","C:\\Users\\Usame Muhammed\\IdeaProjects\\AppiumV\\ApiDemos-debug.apk");
+        // caps.setCapability("automationName","UiAutomator2");
+         caps.setCapability(MobileCapabilityType.DEVICE_NAME,"usame");
+         caps.setCapability(MobileCapabilityType.APP,"C:\\\\Users\\\\Usame Muhammed\\\\IdeaProjects\\\\AppiumV\\\\ApiDemos-debug.apk");
+         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
 
-        AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"),caps);
+        AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"),caps); // Appiumun eski versiyonlarında server sonunua wd/hub ekleniyordu "http://127.0.0.1:4723/wd/hub"
 
 
     }
