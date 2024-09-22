@@ -13,7 +13,7 @@ import java.net.URL;
 public class RunAppUsingPackage {
 
     @Test
-    public void openApp() throws MalformedURLException {
+    public void openApp() throws MalformedURLException, InterruptedException {
 
         DesiredCapabilities caps = new DesiredCapabilities();
 
@@ -24,5 +24,8 @@ public class RunAppUsingPackage {
 
         AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"),caps);
         driver.findElement(By.id("com.google.android.deskclock:id/fab")).click(); // id ile clock e tıklama
+        Thread.sleep(3000);
+        driver.findElement(By.className("android.widget.EditText")).sendKeys("ankara");
+
     }
 }
