@@ -1,0 +1,19 @@
+userName: usamemuhammed_5ptqwx
+accessKey: V9k2CpeqLVZzeXLZSGop
+framework: java
+app: bs://b4abe9b959fe84af4b8728c37d02b25aa7e5f809
+platforms:
+  - platformName: ios
+    deviceName: iPhone 14 Pro Max
+    platformVersion: 16
+  - platformName: ios
+    deviceName: iPhone XS
+    platformVersion: 15
+  - platformName: ios
+    deviceName: iPhone 11
+    platformVersion: 14
+browserstackLocal: true
+buildName: bstack-demo
+projectName: BrowserStack Sample
+debug: true
+networkLogs: true
