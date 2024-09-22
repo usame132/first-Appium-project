@@ -28,6 +28,8 @@ public class RunAppUsingPackage {
 //        Thread.sleep(3000);
 //        driver.findElement(By.className("android.widget.EditText")).sendKeys("ankara");
 
-            driver.findElement(MobileBy.AccessibilityId("Timer")).click();;
+        //    driver.findElement(MobileBy.AccessibilityId("Timer")).click();;
+                // driver.findElement(By.xpath("//android.widget.TextView[@text='Stopwatch']")).click(); //
+                 driver.findElement(By.xpath("//*[@text='Stopwatch']")).click();   // * herhangi class seçiyor
     }
 }
