@@ -30,6 +30,8 @@ public class RunAppUsingPackage {
 
         //    driver.findElement(MobileBy.AccessibilityId("Timer")).click();;
                 // driver.findElement(By.xpath("//android.widget.TextView[@text='Stopwatch']")).click(); //
-                 driver.findElement(By.xpath("//*[@text='Stopwatch']")).click();   // * herhangi class seçiyor
+                 //driver.findElement(By.xpath("//*[@text='Stopwatch']")).click();   // * herhangi class seçiyor
+               // driver.findElement(MobileBy.AndroidUIAutomator("text(\"Stopwatch\")")).click();;
+        driver.findElement(MobileBy.AndroidUIAutomator("description(\"More options\")")).click();;
     }
 }
